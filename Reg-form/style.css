@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(145deg, orange, grey);
+    margin-top: 150px !important;
+}
+
+.register-l {
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+}
+
+.register-l img {
+    /* height: 150px; */
+    width: 80px;
+    margin: 40px;
+    margin-bottom: 5px;
+    animation: mover 1s infinite linear;
+}
+
+.register-l p {
+    padding: 20px 20px 0;
+}
+
+.register-l .btn-primary {
+    border-radius: 1.5rem;
+    background: #f8f8f8;
+    font-weight: 600;
+    color: #555;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.register-r .btn-primary {
+    border-radius: 1.5rem;
+    background: #f8f8f8;
+    font-weight: 600;
+    color: #555;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.register-l .btn-primary:hover {
+    background-color: #000;
+}
+
+.register-r .btn-primary:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.register-r {
+    border: none;
+    background: #f8f8f8;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+    padding: 50px;
+}
+
+.register-r button {
+    padding: 10px;
+    margin: 15px;
+}
+
+.form-group {
+    padding: 15px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.registration-form {
+    padding: 30px;
+}
+
+@keyframes mover{
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
