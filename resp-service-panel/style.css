@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+body h1{
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+}
+.row{
+    display: flex;
+}
+
+.box{
+    margin: 4%;
+    width: 20%;
+    height: 150px;
+    background-color: aliceblue; 
+    color: red;
+    line-height: 150px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;   
+}
+
+@media (min-width:320px) and (max-width:800px) {
+ 
+    .box{
+        max-width: 80% ;
+    }
+}
