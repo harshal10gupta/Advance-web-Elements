@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: #060C21;
+            font-family: 'Poppins', sans-serif;
+            position: relative;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(16vw, 1fr));
+            grid-gap: 3vw;
+        }
+
+        .box {
+            position: relative;
+            height: 30vh;
+            background: #060C21;
+            border: 1px solid #000;
+            margin: 2vw;
+        }
+
+        .box::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: #FFF;
+            transform: skew(2deg, 2deg);
+            z-index: -1;
+        }
+
+        .box:nth-child(1)::before {
+            background: linear-gradient(315deg, #FF0057, #E64A19);
+        }
+
+        .box:nth-child(2)::before {
+            background: linear-gradient(315deg, #89FF00, #00BCD4);
+        }
+
+        .box:nth-child(3)::before {
+            background: linear-gradient(315deg, #E91E63, #5D02FF);
+        }
+
+        .box:nth-child(4)::before {
+            background: linear-gradient(315deg, #0375f4, #7055bc);
+        }
+
+        .box::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</body>
+
+</html>
